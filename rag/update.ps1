@@ -14,11 +14,14 @@ $previousDbEnv=$env:RAG_DB_PATH
 $previousCacheEnv=$env:RAG_CACHE_DB_PATH
 $candidate=Join-Path $PSScriptRoot '.state/index.candidate.sqlite'
 $production=Join-Path $PSScriptRoot '.state/index.sqlite'
+$embeddingCache=Join-Path $PSScriptRoot '.state/embedding-cache.sqlite'
 try {
     $env:RAG_DB_PATH=$candidate
-    $env:RAG_CACHE_DB_PATH=$production
+    $env:RAG_CACHE_DB_PATH=if(Test-Path -LiteralPath $embeddingCache){$embeddingCache}else{$production}
     & $Python (Join-Path $PSScriptRoot 'app.py') index
     if ($LASTEXITCODE -ne 0) { throw 'Index update failed; previous index retained' }
+    # Cached vectors are reusable even when answer evaluation fails; this is never served.
+    Copy-Item -LiteralPath $candidate -Destination $embeddingCache -Force
     & $Python (Join-Path $PSScriptRoot 'evaluate.py')
     if ($LASTEXITCODE -ne 0) { throw 'Evaluation failed; previous index retained. Inspect rag/.state/evaluation.json' }
     if (Test-Path -LiteralPath $production) { Copy-Item -LiteralPath $production -Destination ($production + '.backup') -Force }

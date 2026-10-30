@@ -33,7 +33,7 @@ if (-not $ready) { throw 'Ollama did not become ready; inspect its log.' }
 if ($PullModels) {
     & $ollamaExe pull bge-m3
     if ($LASTEXITCODE -ne 0) { throw 'Embedding model pull failed' }
-    & $ollamaExe pull qwen2.5:3b
+    & $ollamaExe pull qwen3:4b-instruct-2507-q4_K_M
     if ($LASTEXITCODE -ne 0) { throw 'Chat model pull failed' }
 }
 if (-not (Test-Path -LiteralPath (Join-Path $ragRoot '.state/index.sqlite'))) {
