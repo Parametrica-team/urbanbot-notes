@@ -1,1 +1,7 @@
 * text=auto eol=lf
+
+# Preserve the exact bytes used by regulatory and acceptance SHA-256 checks.
+rag/sources/** -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+rag/registry.json -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+rag/app.py -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+rag/evaluate.py -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
