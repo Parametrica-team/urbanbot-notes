@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "coverage": "СП 4, раздел 8: 19 положений сверены по официальному тексту МЧС и открытой консолидированной редакции с изменением № 4. Пять расхождений исключены из актуальных ответов. Исторический снимок: 24 пункта. Остальные СП и СанПиН ещё не проверены; рабочие заметки доступны только отдельным режимом.",
+  "coverage": "Проверенные подмножества СП 4, СП 42, СП 113, СП 476, СП 396, СП 59, СП 551 и двух СанПиН. Полные документы не объявляются проверенными. Непроверенные разделы, таблицы и спорные пункты исключены. Рабочие заметки и архив включаются отдельно.",
   "documents": [
     {
       "id": "sp4-mchs-ch3",
@@ -27,7 +27,15 @@
       "raw_sha256": "fecdffa84cdc7fafa026d6ec99c12a8b40323b844c266e74744cdb6acb5ff5d5",
       "text_file": "sources/sp4-mchs.txt",
       "text_sha256": "3c36d3f73831c44137bbfcc1a2a69a4828fc67ef137b615607e0cac62401bea7",
-      "verification_note": "Скачан официальный DOCX; структура раздела 8 и значения ширин сверены. В документе перечислены приказы до 610 от 15.06.2022. В реестре найдено изменение № 4; просмотр полного текста изменения требует авторизации, поэтому current_verified=false. Число 13 м встречается в двух интервалах: не разрешать неоднозначность автоматически."
+      "verification_note": "Скачан официальный DOCX; структура раздела 8 и значения ширин сверены. В документе перечислены приказы до 610 от 15.06.2022. В реестре найдено изменение № 4; просмотр полного текста изменения требует авторизации, поэтому current_verified=false. Число 13 м встречается в двух интервалах: не разрешать неоднозначность автоматически.",
+      "clause_warnings": {
+        "8.1.4": [
+          "В тексте граница 13 м включена в оба соседних интервала. Для пограничного случая однозначное значение без уточнения не подтверждено."
+        ],
+        "8.2.3": [
+          "В тексте граница 13 м включена в оба соседних интервала. Для пограничного случая однозначное значение без уточнения не подтверждено."
+        ]
+      }
     },
     {
       "id": "sp4-section8-crosschecked-ch4",
@@ -86,7 +94,15 @@
           "file": "sources/sp4-change4-legalacts.txt",
           "sha256": "ef19018bedf4ed56a0b553e3596db108e3e205a201b65f0ad66dabe457618eaa"
         }
-      ]
+      ],
+      "clause_warnings": {
+        "8.1.4": [
+          "В тексте граница 13 м включена в оба соседних интервала. Для пограничного случая однозначное значение без уточнения не подтверждено."
+        ],
+        "8.2.3": [
+          "В тексте граница 13 м включена в оба соседних интервала. Для пограничного случая однозначное значение без уточнения не подтверждено."
+        ]
+      }
     },
     {
       "id": "sp42-2026",
@@ -151,6 +167,280 @@
       "current_verified": false,
       "edition": null,
       "reason": "Карточка или рабочая выжимка не заменяет сверку полного нормативного текста; не включён в ответы."
+    },
+    {
+      "id": "sp113-five-reviewed-ch4",
+      "document": "СП 113.13330.2023",
+      "edition": "Изменения № 1–4, редакция 02.09.2026; пять проверенных пунктов",
+      "verification_status": "reviewed-open-text",
+      "current_verified": true,
+      "provenance": "mirror",
+      "official_metadata_verified": true,
+      "official_text_verified": false,
+      "checked_at": "2026-10-30",
+      "source_format": "structured-clauses",
+      "included_prefixes": [
+        "5."
+      ],
+      "included_clauses": [
+        "5.9",
+        "5.17",
+        "5.23",
+        "5.26",
+        "5.40"
+      ],
+      "scope_context": "Пять полных пунктов СП 113 о маневрировании, чистой высоте, числе рамп, геометрии рамп и колесоотбойниках. Тексты Legalacts и СудАкт совпали; дата изменения № 4 сверена по Росстандарту. Зеркала могут иметь общий источник. Приложение А и полная пожарная проверка не охвачены. Не подтверждает соответствие всего проекта.",
+      "source_url": "https://legalacts.ru/doc/prikaz-minstroja-rossii-ot-05102023-n-718pr-ob-utverzhdenii/",
+      "crosscheck_urls": [
+        "https://sudact.ru/law/prikaz-minstroia-rossii-ot-05102023-n-718pr/sp-113.13330.2023/5/",
+        "https://protect.gost.ru/sp/changesdetails/46e37b78-e142-4141-b753-095734febeb9"
+      ],
+      "effective_from": "2026-10-03",
+      "effective_until": null,
+      "raw_file": "sources/sp113-five-reviewed.json",
+      "text_file": "sources/sp113-five-reviewed.json",
+      "raw_sha256": "18a8d5ad066ff6282bf633c58cd20645bcd610bdc9f40b661cc2e271230807fa",
+      "text_sha256": "18a8d5ad066ff6282bf633c58cd20645bcd610bdc9f40b661cc2e271230807fa",
+      "verification_note": "Отдельное чтение пяти пунктов и механическое сопоставление двух текущих публикаций. Все исключения пункта 5.26 и абзацы 5.40 сохранены."
+    },
+    {
+      "id": "sp42-parking-reviewed-2026",
+      "document": "СП 42.13330.2026",
+      "edition": "Редакция 2026; парковочное подмножество из открытой PDF-копии",
+      "verification_status": "reviewed-open-text",
+      "current_verified": true,
+      "provenance": "mirror",
+      "official_metadata_verified": true,
+      "official_text_verified": false,
+      "checked_at": "2026-10-30",
+      "source_format": "structured-clauses",
+      "included_prefixes": [
+        "8."
+      ],
+      "included_clauses": [
+        "8.111",
+        "8.112",
+        "8.113",
+        "8.117",
+        "8.125",
+        "8.126",
+        "8.127"
+      ],
+      "scope_context": "Ограниченная выдержка из открытой PDF-копии СП 42.13330.2026, страницы 174–180. Официальные сведения о документе сверены по Росстандарту; официальный текст побайтно не сопоставлен. Таблицы 8.16 и 8.17 и связанные примечания сохранены. Приложение И и все ссылочные СП не проверены. Приоритет и уточнения НГП/РНГП/МНГП/ПЗЗ сохраняются; не универсальные дефолты.",
+      "source_url": "https://abrmove.ru/sp42-2026.pdf",
+      "crosscheck_urls": [
+        "https://protect.gost.ru/sp/details/f6917ab4-63d8-4ecb-9794-0b4990ba3b99"
+      ],
+      "effective_from": "2026-07-12",
+      "effective_until": null,
+      "raw_file": "sources/sp42-parking-reviewed.json",
+      "text_file": "sources/sp42-parking-reviewed.json",
+      "raw_sha256": "1a9a2baee9b2a089e6fbb678ce08a26c790b343bdd9e4f08df791dc312b0b6d2",
+      "text_sha256": "1a9a2baee9b2a089e6fbb678ce08a26c790b343bdd9e4f08df791dc312b0b6d2",
+      "verification_note": "Отдельный обзор семи пунктов и таблиц. Восстановлены условия, потерянные в прежней краткой выжимке; удалены колонтитулы PDF и восстановлены пробелы в примечании 4 к 8.125."
+    },
+    {
+      "id": "sanpin3684-reviewed",
+      "document": "СанПиН 2.1.3684-21",
+      "edition": "Редакция 10.09.2026; пункты 3, 4, 6, 7",
+      "verification_status": "reviewed-open-text",
+      "current_verified": true,
+      "provenance": "mirror",
+      "official_metadata_verified": false,
+      "official_text_verified": false,
+      "checked_at": "2026-10-30",
+      "source_format": "structured-clauses",
+      "included_prefixes": [
+        ""
+      ],
+      "included_clauses": [
+        "3",
+        "4",
+        "6",
+        "7"
+      ],
+      "scope_context": "Полные пункты о контейнерных площадках. Текст двух открытых публикаций совпал; изменение №25 действует с 05.10.2026 и касается пункта 34. Приложение 1 и актуальность всех ссылочных документов не проверены. Уменьшение расстояний на 25% условное, не автоматическое разрешение.",
+      "source_url": "https://legalacts.ru/doc/postanovlenie-glavnogo-gosudarstvennogo-sanitarnogo-vracha-rf-ot-28012021-n/",
+      "crosscheck_urls": [
+        "https://sudact.ru/law/postanovlenie-glavnogo-gosudarstvennogo-sanitarnogo-vracha-rf-ot_1364/sanpin-2.1.3684-21/ii/",
+        "https://base.garant.ru/414962682/",
+        "https://28.rospotrebnadzor.ru/content/1/17061/info%4028.rospotrebnadzor.ru"
+      ],
+      "effective_from": "2026-10-05",
+      "effective_until": null,
+      "raw_file": "sources/sanpin3684-reviewed.json",
+      "text_file": "sources/sanpin3684-reviewed.json",
+      "raw_sha256": "0ced0857de0cdb644b9bf2bf428d0e66f72574e9f10423769ef5b98ff45a4786",
+      "text_sha256": "0ced0857de0cdb644b9bf2bf428d0e66f72574e9f10423769ef5b98ff45a4786",
+      "verification_note": "Полные пункты о контейнерных площадках. Текст двух открытых публикаций совпал; изменение №25 действует с 05.10.2026 и касается пункта 34. Приложение 1 и актуальность всех ссылочных документов не проверены. Уменьшение расстояний на 25% условное, не автоматическое разрешение."
+    },
+    {
+      "id": "sp476-five-reviewed",
+      "document": "СП 476.1325800.2020",
+      "edition": "СП 476.1325800.2020; пять проверенных пунктов",
+      "verification_status": "reviewed-open-text",
+      "current_verified": true,
+      "provenance": "mirror",
+      "official_metadata_verified": true,
+      "official_text_verified": false,
+      "checked_at": "2026-10-30",
+      "source_format": "structured-clauses",
+      "included_prefixes": [
+        ""
+      ],
+      "included_clauses": [
+        "7.21",
+        "7.26",
+        "7.27",
+        "9.2.10",
+        "9.2.12"
+      ],
+      "scope_context": "Пять полных пунктов 7.21, 7.26, 7.27, 9.2.10, 9.2.12 сверены с открытой PDF-копией. Официальная карточка подтверждает действующий документ; найденный проект изменения 1 не принят за действующую редакцию. Официальный полный текст не сопоставлен. Запрет транзита относится к участкам групп застройки. Порог плотности 20 тыс. м²/га сохраняется дословно.",
+      "source_url": "https://meganorm.ru/Data2/1/4293722/4293722614.pdf",
+      "crosscheck_urls": [
+        "https://protect.gost.ru/sp/details/4fed603a-e722-4601-b741-7541253109f2"
+      ],
+      "effective_from": "2020-07-25",
+      "effective_until": null,
+      "raw_file": "sources/sp476-five-reviewed.json",
+      "text_file": "sources/sp476-five-reviewed.json",
+      "raw_sha256": "23c072d4ec3ec0e12ca31757f5cd918de1f77b559c8784ddbb8b9888c9abbe3a",
+      "text_sha256": "23c072d4ec3ec0e12ca31757f5cd918de1f77b559c8784ddbb8b9888c9abbe3a",
+      "verification_note": "Пять полных пунктов 7.21, 7.26, 7.27, 9.2.10, 9.2.12 сверены с открытой PDF-копией. Официальная карточка подтверждает действующий документ; найденный проект изменения 1 не принят за действующую редакцию. Официальный полный текст не сопоставлен. Запрет транзита относится к участкам групп застройки. Порог плотности 20 тыс. м²/га сохраняется дословно."
+    },
+    {
+      "id": "sp59-reviewed",
+      "document": "СП 59.13330.2020",
+      "edition": "Изменения 1–4; четыре проверенных пункта",
+      "verification_status": "reviewed-open-text",
+      "current_verified": true,
+      "provenance": "mirror",
+      "official_metadata_verified": true,
+      "official_text_verified": false,
+      "checked_at": "2026-10-30",
+      "source_format": "structured-clauses",
+      "included_prefixes": [
+        ""
+      ],
+      "included_clauses": [
+        "5.1.11",
+        "5.1.19",
+        "5.2.2",
+        "5.2.4"
+      ],
+      "scope_context": "Полные пункты 5.1.11, 5.1.19, 5.2.2, 5.2.4 по покрытиям, ступеням и доступным парковкам. Две открытые публикации сопоставлены; официальный полный текст не проверен. Табличный пункт 5.2.1 исключён. Дата последнего изменения взята из Росстандарта: 25.02.2025; вторичная дата 27.02.2025 расходится. Условия исключения 200 м и примечание о смежных местах сохранены.",
+      "source_url": "https://www.b2b-center.ru/search/standards/svod-pravil/59-13330-2020/",
+      "crosscheck_urls": [
+        "https://meganorm.ru/mega_doc/dop_fire/opredelenie_verkhovnogo_suda_rf_ot_20_11_2023_N/0/sp_59_13330_2020_svod_pravil_dostupnost_zdaniy_i_sooruzheniy.html",
+        "https://protect.gost.ru/sp/details/9a314146-2e12-458d-a3dc-914eaa364d51",
+        "https://protect.gost.ru/sp/changesdetails/070b0f9b-69ba-40a0-837d-eb0d504dbb06"
+      ],
+      "effective_from": "2025-02-25",
+      "effective_until": null,
+      "raw_file": "sources/sp59-reviewed.json",
+      "text_file": "sources/sp59-reviewed.json",
+      "raw_sha256": "a71686080c5fe7ed12f44c3a7f7adbddc38eb8d5f164e46de09243949b69cb3e",
+      "text_sha256": "a71686080c5fe7ed12f44c3a7f7adbddc38eb8d5f164e46de09243949b69cb3e",
+      "verification_note": "Полные пункты 5.1.11, 5.1.19, 5.2.2, 5.2.4 по покрытиям, ступеням и доступным парковкам. Две открытые публикации сопоставлены; официальный полный текст не проверен. Табличный пункт 5.2.1 исключён. Дата последнего изменения взята из Росстандарта: 25.02.2025; вторичная дата 27.02.2025 расходится. Условия исключения 200 м и примечание о смежных местах сохранены."
+    },
+    {
+      "id": "sp396-reviewed",
+      "document": "СП 396.1325800.2018",
+      "edition": "Изменения 1–3; пять проверенных пунктов",
+      "verification_status": "reviewed-open-text",
+      "current_verified": true,
+      "provenance": "mirror",
+      "official_metadata_verified": true,
+      "official_text_verified": false,
+      "checked_at": "2026-10-30",
+      "source_format": "structured-clauses",
+      "included_prefixes": [
+        ""
+      ],
+      "included_clauses": [
+        "5.4.6",
+        "5.4.7",
+        "5.8.40",
+        "5.8.42",
+        "5.8.43"
+      ],
+      "scope_context": "Пять полных пунктов о квартальных проездах, пешеходных путях и сопряжении боковых проездов. Локальный полный текст сопоставлен с текущей открытой копией. Официальная карточка подтверждает изменения 1–3; полный официальный текст не сопоставлен. Числа относятся только к указанным типам элементов УДС, не универсальны для любого въезда.",
+      "source_url": "https://internet-law.ru/documents/prod/normy/0/sp_19502.html",
+      "crosscheck_urls": [
+        "https://protect.gost.ru/sp/details/b06a81a0-0143-4299-aac1-764b05cf4242",
+        "https://protect.gost.ru/sp/changesdetails/6e67dd2f-ddf3-4093-8bd0-0b9d35f451cd"
+      ],
+      "effective_from": "2025-01-27",
+      "effective_until": null,
+      "raw_file": "sources/sp396-reviewed.json",
+      "text_file": "sources/sp396-reviewed.json",
+      "raw_sha256": "f78f7f11b1982f3facfa4097805937690136e9e6f172541a113711e95fa48c4e",
+      "text_sha256": "f78f7f11b1982f3facfa4097805937690136e9e6f172541a113711e95fa48c4e",
+      "verification_note": "Пять полных пунктов о квартальных проездах, пешеходных путях и сопряжении боковых проездов. Локальный полный текст сопоставлен с текущей открытой копией. Официальная карточка подтверждает изменения 1–3; полный официальный текст не сопоставлен. Числа относятся только к указанным типам элементов УДС, не универсальны для любого въезда."
+    },
+    {
+      "id": "sanpin3685-reviewed",
+      "document": "СанПиН 1.2.3685-21",
+      "edition": "Редакция 24.12.2025; только пункт 165",
+      "verification_status": "reviewed-open-text",
+      "current_verified": true,
+      "provenance": "mirror",
+      "official_metadata_verified": false,
+      "official_text_verified": false,
+      "checked_at": "2026-10-30",
+      "source_format": "structured-clauses",
+      "included_prefixes": [
+        ""
+      ],
+      "included_clauses": [
+        "165"
+      ],
+      "scope_context": "Только полный пункт 165 о способе расчёта инсоляции; совпадает в двух открытых публикациях. Не содержит нормативов продолжительности, не подтверждает достаточность инсоляции. Таблицы инсоляции и шума не проверены. Дата 01.03.2026 относится к вступлению в действие консолидированного набора изменений, а не к отдельному постановлению №19.",
+      "source_url": "https://legalacts.ru/doc/postanovlenie-glavnogo-gosudarstvennogo-sanitarnogo-vracha-rf-ot-28012021-n_2/",
+      "crosscheck_urls": [
+        "https://sudact.ru/law/postanovlenie-glavnogo-gosudarstvennogo-sanitarnogo-vracha-rf-ot_1430/sanpin-1.2.3685-21/v/gigienicheskie-normativy-fizicheskikh-faktorov-v/tablitsa-5.57/"
+      ],
+      "effective_from": "2026-03-01",
+      "effective_until": null,
+      "raw_file": "sources/sanpin3685-reviewed.json",
+      "text_file": "sources/sanpin3685-reviewed.json",
+      "raw_sha256": "a57cfdeca057e88e38c808b2fce51aae0ef009b78d76ccc917341985aeb95422",
+      "text_sha256": "a57cfdeca057e88e38c808b2fce51aae0ef009b78d76ccc917341985aeb95422",
+      "verification_note": "Только полный пункт 165 о способе расчёта инсоляции; совпадает в двух открытых публикациях. Не содержит нормативов продолжительности, не подтверждает достаточность инсоляции. Таблицы инсоляции и шума не проверены. Дата 01.03.2026 относится к вступлению в действие консолидированного набора изменений, а не к отдельному постановлению №19."
+    },
+    {
+      "id": "sp551-reviewed",
+      "document": "СП 551.1311500.2026",
+      "edition": "СП 551.1311500.2026; пункты 1.3, 4.1–4.3",
+      "verification_status": "reviewed-open-text",
+      "current_verified": true,
+      "provenance": "mirror",
+      "official_metadata_verified": true,
+      "official_text_verified": false,
+      "checked_at": "2026-10-30",
+      "source_format": "structured-clauses",
+      "included_prefixes": [
+        ""
+      ],
+      "included_clauses": [
+        "1.3",
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "scope_context": "Полные пункты 1.3, 4.1–4.3; раздел 4 сопоставлен с КонсультантПлюс. В слове встроенно-пристроенных исправлен пропуск н в основной копии по второй публикации. Официальный полный экземпляр не проверен. Учитывать область применения 1.2 и переходные условия; не переносить автоматически на эксплуатацию существующих объектов. Пункт 4.2 относится только к противопожарным расстояниям, не отменяет санитарные и иные ограничения. Для чисел из СП4 нужно отдельное проверенное основание.",
+      "source_url": "https://bazanpa.ru/mchs-rossii-sp-ot31032026-h7116157/",
+      "crosscheck_urls": [
+        "https://www.consultant.ru/document/cons_doc_LAW_534132/1e66bb51d026be8c1ff92e55e508118c888c728f/",
+        "https://protect.gost.ru/sp/details/63480a25-98f4-40a3-9de1-22134cb06528"
+      ],
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "raw_file": "sources/sp551-reviewed.json",
+      "text_file": "sources/sp551-reviewed.json",
+      "raw_sha256": "9b748df91f565c642b691d973c512e287e8f1c29c87edcbbd829e2cd6f7a3033",
+      "text_sha256": "9b748df91f565c642b691d973c512e287e8f1c29c87edcbbd829e2cd6f7a3033",
+      "verification_note": "Полные пункты 1.3, 4.1–4.3; раздел 4 сопоставлен с КонсультантПлюс. В слове встроенно-пристроенных исправлен пропуск н в основной копии по второй публикации. Официальный полный экземпляр не проверен. Учитывать область применения 1.2 и переходные условия; не переносить автоматически на эксплуатацию существующих объектов. Пункт 4.2 относится только к противопожарным расстояниям, не отменяет санитарные и иные ограничения. Для чисел из СП4 нужно отдельное проверенное основание."
     }
   ]
 }

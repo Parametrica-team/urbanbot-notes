@@ -10,7 +10,7 @@ async function init() {
     $('status').textContent=`Фрагментов: ${data.count}. Индекс: ${new Date(data.built_at).toLocaleString('ru')}. Модели: ${data.models.join(', ')}.`
     $('submit').disabled=false
     const seen=new Set()
-    for(const item of data.documents.filter(d=>d.verification_status==='verified-snapshot')) {
+    for(const item of data.documents.filter(d=>['verified-snapshot','reviewed-open-text'].includes(d.verification_status))) {
       if(!seen.has(item.document)){const option=text('option',item.document); option.value=item.document; $('document').append(option);seen.add(item.document)}
       const edition=text('option',item.edition); edition.value=item.edition; $('edition').append(edition)
     }
@@ -25,6 +25,9 @@ $('ask').addEventListener('submit',async(event)=>{
     for(const evidence of data.evidence||[]) {
       const s=evidence.source; const card=text('article','','source')
       card.append(text('h3',`${s.document} · ${s.clause}`),text('p',`${s.edition} · ${s.status==='working-note'?'рабочая заметка, не нормативное основание':s.current_verified?'актуальность проверена':'снимок редакции; текущая применимость не подтверждена'}`,'meta'),text('blockquote',evidence.quote))
+      if(s.provenance==='mirror')card.append(text('p','Текст из открытой копии. Сведения о редакции сверены; официальный экземпляр целиком не проверен.','meta'))
+      for(const warning of s.warnings||[])card.append(text('p',warning,'notice'))
+      if(s.checked_at)card.append(text('p','Дата сверки: '+s.checked_at,'meta'))
       const url=new URL(s.source_url); if(url.protocol==='https:') {const a=text('a','Открыть источник ↗');a.href=url.href;a.target='_blank';a.rel='noopener noreferrer';card.append(a)}
       const detail=text('details','');detail.append(text('summary','Условия и полный фрагмент'),text('pre',s.context+'\n\n'+s.text));card.append(detail)
       $('result').append(card)

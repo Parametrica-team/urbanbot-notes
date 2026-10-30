@@ -1,0 +1,71 @@
+[
+  {
+    "id": "sp113",
+    "document": "СП 113.13330.2023",
+    "edition_claimed_by_publisher": "02.09.2026",
+    "source_url": "https://legalacts.ru/doc/prikaz-minstroja-rossii-ot-05102023-n-718pr-ob-utverzhdenii/",
+    "source_type": "secondary-consolidated-publication",
+    "status": "staged-not-approved",
+    "downloaded_at": "2026-10-30T10:38:12.308158+00:00",
+    "sha256": "747ffaff7c2c1d574367e8f6540992bf31bee8073d3f169ebb0a2b4e6ad76bb5",
+    "bytes": 244924,
+    "tables": 8,
+    "cells": 54,
+    "spanning_cells": 6,
+    "image_cells_requiring_review": 0,
+    "title": "Приказ Минстроя России от 05.10.2023 N 718/пр\n(ред. от 02.09.2026)\n&quot;Об утверждении СП 113.13330.2023 &quot;СНиП 21-02-99* Стоянки автомобилей&quot;\n(вместе с &quot;СП 113.13330.2023. Свод правил. Стоянки автомобилей СНиП 21-02-99*&quot;)",
+    "required_review": [
+      "full-text completeness",
+      "effective dates of each amendment",
+      "tables, spans, units and notes",
+      "clause applicability",
+      "independent source comparison"
+    ]
+  },
+  {
+    "id": "sanpin3684",
+    "document": "СанПиН 2.1.3684-21",
+    "edition_claimed_by_publisher": "10.09.2026",
+    "source_url": "https://legalacts.ru/doc/postanovlenie-glavnogo-gosudarstvennogo-sanitarnogo-vracha-rf-ot-28012021-n/",
+    "source_type": "secondary-consolidated-publication",
+    "status": "staged-not-approved",
+    "downloaded_at": "2026-10-30T10:38:12.349659+00:00",
+    "sha256": "62a8feebd6bc5dba545a52f53dfa8d197f9133b870083ee3f190d521b9ce4931",
+    "bytes": 448491,
+    "tables": 12,
+    "cells": 593,
+    "spanning_cells": 19,
+    "image_cells_requiring_review": 0,
+    "title": "Постановление Главного государственного санитарного врача РФ от 28.01.2021 N 3\n(ред. от 10.09.2026)\n&quot;Об утверждении санитарных правил и норм СанПиН 2.1.3684-21 &quot;Санитарно-эпидемиологические требования к содержанию территорий городских и сельских поселений, к водным объектам, питьевой воде и питьевому водоснабжению, атмосферному воздуху, почвам, жилым помещениям, эксплуатации производственных, общественных помещений, организации и проведению санитарно-противоэпидемических (профилактических) мероприятий&quot;\n(вместе с &quot;СанПиН 2.1.3684-21. Санитарные правила и нормы...&quot;)\n(Зарегистрировано в Минюсте России 29.01.2021 N 62297)",
+    "required_review": [
+      "full-text completeness",
+      "effective dates of each amendment",
+      "tables, spans, units and notes",
+      "clause applicability",
+      "independent source comparison"
+    ]
+  },
+  {
+    "id": "sanpin3685",
+    "document": "СанПиН 1.2.3685-21",
+    "edition_claimed_by_publisher": "24.12.2025",
+    "source_url": "https://legalacts.ru/doc/postanovlenie-glavnogo-gosudarstvennogo-sanitarnogo-vracha-rf-ot-28012021-n_2/",
+    "source_type": "secondary-consolidated-publication",
+    "status": "staged-not-approved",
+    "downloaded_at": "2026-10-30T10:38:14.881465+00:00",
+    "sha256": "81f4799256162d72f84a8d6af303427848c7659f9bf65ddea2e2340ebd3df726",
+    "bytes": 6440093,
+    "tables": 208,
+    "cells": 79006,
+    "spanning_cells": 1056,
+    "image_cells_requiring_review": 0,
+    "title": "Постановление Главного государственного санитарного врача РФ от 28.01.2021 N 2\n(ред. от 24.12.2025)\n&quot;Об утверждении санитарных правил и норм СанПиН 1.2.3685-21 &quot;Гигиенические нормативы и требования к обеспечению безопасности и (или) безвредности для человека факторов среды обитания&quot;\n(вместе с &quot;СанПиН 1.2.3685-21. Санитарные правила и нормы...&quot;)\n(Зарегистрировано в Минюсте России 29.01.2021 N 62296)\n(с изм. и доп., вступ. в силу с 01.03.2026)",
+    "required_review": [
+      "full-text completeness",
+      "effective dates of each amendment",
+      "tables, spans, units and notes",
+      "clause applicability",
+      "independent source comparison"
+    ]
+  }
+]

@@ -11,10 +11,12 @@ if ($Vault) {
 & $Python -m unittest discover -s (Join-Path $PSScriptRoot 'tests') -v
 if ($LASTEXITCODE -ne 0) { throw 'Tests failed; previous index retained' }
 $previousDbEnv=$env:RAG_DB_PATH
+$previousCacheEnv=$env:RAG_CACHE_DB_PATH
 $candidate=Join-Path $PSScriptRoot '.state/index.candidate.sqlite'
 $production=Join-Path $PSScriptRoot '.state/index.sqlite'
 try {
     $env:RAG_DB_PATH=$candidate
+    $env:RAG_CACHE_DB_PATH=$production
     & $Python (Join-Path $PSScriptRoot 'app.py') index
     if ($LASTEXITCODE -ne 0) { throw 'Index update failed; previous index retained' }
     & $Python (Join-Path $PSScriptRoot 'evaluate.py')
@@ -25,6 +27,7 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Candidate promotion failed; previous index retained' }
 } finally {
     $env:RAG_DB_PATH=$previousDbEnv
+    $env:RAG_CACHE_DB_PATH=$previousCacheEnv
     if (Test-Path -LiteralPath $candidate) { Remove-Item -LiteralPath $candidate }
 }
 Write-Output 'Index rebuilt and evaluated. No files were automatically committed or published.'
