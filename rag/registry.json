@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "coverage": "СП 4, раздел 8: 19 положений сверены по официальному тексту МЧС и открытой консолидированной редакции с изменением № 4. Пять расхождений исключены из актуальных ответов. Исторический снимок: 24 пункта. Остальные СП и СанПиН ещё не проверены; рабочие заметки доступны только отдельным режимом.",
+  "documents": [
+    {
+      "id": "sp4-mchs-ch3",
+      "document": "СП 4.13130.2013",
+      "edition": "МЧС: изменения по № 3, 01.12.2022",
+      "verification_status": "verified-snapshot",
+      "current_verified": false,
+      "effective_from": "2022-12-01",
+      "effective_until": "2023-12-01",
+      "checked_at": "2026-10-30",
+      "included_prefixes": [
+        "8.1.",
+        "8.2."
+      ],
+      "scope_context": "Проверенный снимок текста МЧС, раздел 8. Актуальность после изменения № 4 не подтверждена. Пункт 1.2 исключает Ф1.3 выше 75 м, прочие классы выше 50 м и специальные объекты с перечисленными исключениями. Применимость к конкретному проекту не установлена.",
+      "scopes": {
+        "8.1": "Раздел 8.1: жилые и общественные здания, классы Ф1–Ф4. Не переносить требования для Ф5.",
+        "8.2": "Раздел 8.2: производственные и складские здания, класс Ф5. Не переносить требования для Ф1–Ф4."
+      },
+      "source_url": "https://mchs.gov.ru/dokumenty/vse-dokumenty/6667",
+      "download_url": "https://mchs.gov.ru/uploads/document/2023-05-25/381ce09fdac7d762943edd0a37a53357.docx",
+      "registry_url": "https://protect.gost.ru/sp/details/fe915813-95ec-43a6-ab1c-91027e06bf1c",
+      "raw_file": "sources/sp4-mchs.docx",
+      "raw_sha256": "fecdffa84cdc7fafa026d6ec99c12a8b40323b844c266e74744cdb6acb5ff5d5",
+      "text_file": "sources/sp4-mchs.txt",
+      "text_sha256": "3c36d3f73831c44137bbfcc1a2a69a4828fc67ef137b615607e0cac62401bea7",
+      "verification_note": "Скачан официальный DOCX; структура раздела 8 и значения ширин сверены. В документе перечислены приказы до 610 от 15.06.2022. В реестре найдено изменение № 4; просмотр полного текста изменения требует авторизации, поэтому current_verified=false. Число 13 м встречается в двух интервалах: не разрешать неоднозначность автоматически."
+    },
+    {
+      "id": "sp4-section8-crosschecked-ch4",
+      "document": "СП 4.13130.2013",
+      "edition": "Раздел 8: сверка редакции с изменением № 4 (27.06.2023)",
+      "verification_status": "verified-snapshot",
+      "current_verified": true,
+      "effective_from": "2023-12-01",
+      "effective_until": null,
+      "checked_at": "2026-10-30",
+      "included_prefixes": [
+        "8.1.",
+        "8.2."
+      ],
+      "scope_context": "Сверенные положения раздела 8. Официальный текст МЧС сопоставлен с открытой консолидированной публикацией редакции от 27.06.2023; текст изменения № 4 просмотрен отдельно. Только перечисленные 19 пунктов; пять расхождений исключены. Область применения — пп. 1.1–1.2; для Ф1.3 выше 75 м и иных классов выше 50 м требования не экстраполировать.",
+      "scopes": {
+        "8.1": "Раздел 8.1: жилые и общественные здания, классы Ф1–Ф4. Не переносить требования для Ф5.",
+        "8.2": "Раздел 8.2: производственные и складские здания, класс Ф5. Не переносить требования для Ф1–Ф4."
+      },
+      "source_url": "https://mchs.gov.ru/dokumenty/vse-dokumenty/6667",
+      "download_url": "https://mchs.gov.ru/uploads/document/2023-05-25/381ce09fdac7d762943edd0a37a53357.docx",
+      "registry_url": "https://protect.gost.ru/sp/details/fe915813-95ec-43a6-ab1c-91027e06bf1c",
+      "raw_file": "sources/sp4-mchs.docx",
+      "raw_sha256": "fecdffa84cdc7fafa026d6ec99c12a8b40323b844c266e74744cdb6acb5ff5d5",
+      "text_file": "sources/sp4-mchs.txt",
+      "text_sha256": "3c36d3f73831c44137bbfcc1a2a69a4828fc67ef137b615607e0cac62401bea7",
+      "verification_note": "19 пунктов совпали при нормализации пробелов и пунктуации. Пункты 8.1.3, 8.1.7, 8.1.11, 8.2.4, 8.2.6 исключены из актуальных ответов из-за расхождений. Особо существенное числовое расхождение: 8.2.6. Полный официальный текст актуальной редакции не объявляется проверенным.",
+      "included_clauses": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.4",
+        "8.1.5",
+        "8.1.6",
+        "8.1.8",
+        "8.1.9",
+        "8.1.10",
+        "8.1.12",
+        "8.1.13",
+        "8.1.14",
+        "8.1.15",
+        "8.1.16",
+        "8.2.1",
+        "8.2.2",
+        "8.2.3",
+        "8.2.5",
+        "8.2.7",
+        "8.2.8"
+      ],
+      "crosscheck_urls": [
+        "https://meganorm.ru/mega_doc/fire/pravila/0/prikaz_mchs_rossii_ot_24_04_2013_N_288_red_ot_27_06_2023_ob.html",
+        "https://legalacts.ru/doc/izmenenie-n-4-k-sp-4131302013-sistemy-protivopozharnoi-zashchity/",
+        "https://protect.gost.ru/sp/changesdetails/3eb645aa-f0d2-4607-8c18-71cb4bffef04"
+      ],
+      "verification_assets": [
+        {
+          "file": "sources/sp4-change4-legalacts.txt",
+          "sha256": "ef19018bedf4ed56a0b553e3596db108e3e205a201b65f0ad66dabe457618eaa"
+        }
+      ]
+    },
+    {
+      "id": "sp42-2026",
+      "document": "СП 42.13330.2026",
+      "verification_status": "pending-full-text-review",
+      "current_verified": false,
+      "edition": null,
+      "reason": "Карточка или рабочая выжимка не заменяет сверку полного нормативного текста; не включён в ответы."
+    },
+    {
+      "id": "sp476",
+      "document": "СП 476.1325800.2020",
+      "verification_status": "pending-full-text-review",
+      "current_verified": false,
+      "edition": null,
+      "reason": "Карточка или рабочая выжимка не заменяет сверку полного нормативного текста; не включён в ответы."
+    },
+    {
+      "id": "sp396",
+      "document": "СП 396.1325800.2018",
+      "verification_status": "pending-full-text-review",
+      "current_verified": false,
+      "edition": null,
+      "reason": "Карточка или рабочая выжимка не заменяет сверку полного нормативного текста; не включён в ответы."
+    },
+    {
+      "id": "sp113",
+      "document": "СП 113.13330.2023",
+      "verification_status": "pending-full-text-review",
+      "current_verified": false,
+      "edition": null,
+      "reason": "Карточка или рабочая выжимка не заменяет сверку полного нормативного текста; не включён в ответы."
+    },
+    {
+      "id": "sp59",
+      "document": "СП 59.13330.2020",
+      "verification_status": "pending-full-text-review",
+      "current_verified": false,
+      "edition": null,
+      "reason": "Карточка или рабочая выжимка не заменяет сверку полного нормативного текста; не включён в ответы."
+    },
+    {
+      "id": "sp551",
+      "document": "СП 551.1311500.2026",
+      "verification_status": "pending-full-text-review",
+      "current_verified": false,
+      "edition": null,
+      "reason": "Карточка или рабочая выжимка не заменяет сверку полного нормативного текста; не включён в ответы."
+    },
+    {
+      "id": "sanpin3684",
+      "document": "СанПиН 2.1.3684-21",
+      "verification_status": "pending-full-text-review",
+      "current_verified": false,
+      "edition": null,
+      "reason": "Карточка или рабочая выжимка не заменяет сверку полного нормативного текста; не включён в ответы."
+    },
+    {
+      "id": "sanpin3685",
+      "document": "СанПиН 1.2.3685-21",
+      "verification_status": "pending-full-text-review",
+      "current_verified": false,
+      "edition": null,
+      "reason": "Карточка или рабочая выжимка не заменяет сверку полного нормативного текста; не включён в ответы."
+    }
+  ]
+}

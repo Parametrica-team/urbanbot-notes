@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>URBANBOT — вопросы по нормативам</title><link rel="stylesheet" href="/style.css">
+<main><header><span class="brand">PARAMETRICA / URBANBOT</span><a href="https://parametrica-team.github.io/urbanbot-notes/" target="_blank" rel="noopener">Библиотека ↗</a></header>
+<h1>Вопросы по нормативам</h1><p class="lead">Поиск по источникам и ответы с проверяемыми цитатами.</p>
+<section class="notice" aria-live="polite"><strong>Покрытие базы</strong><p id="coverage">Подключение к индексу и локальным моделям…</p><p id="status"></p></section>
+<form id="ask"><label for="question">Ваш вопрос</label><textarea id="question" minlength="3" maxlength="2000" required rows="3" placeholder="Какая ширина пожарного проезда указана для жилого дома высотой 30 м?"></textarea>
+<div class="filters"><label>Документ<select id="document"><option value="">Все проиндексированные</option></select></label><label>Редакция<select id="edition"><option value="">Все доступные</option></select></label></div>
+<label class="check"><input id="snapshots" type="checkbox">Изучать снимки редакций, актуальность которых полностью не подтверждена</label>
+<label class="check"><input id="notes" type="checkbox">Искать также в рабочих заметках Obsidian (не нормативные основания)</label>
+<p class="hint">По умолчанию используются только сверенные положения выбранной редакции. Неизвестные требования не подменяются знаниями модели.</p><button id="submit" type="submit" disabled>Найти основания</button></form>
+<section id="result" aria-live="polite"></section><footer>Локальный режим. Обработка без облачного API. Источники и применимость к проекту проверяются отдельно.</footer></main><script src="/app.js" defer></script></html>

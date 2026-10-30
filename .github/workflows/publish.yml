@@ -21,6 +21,13 @@ jobs:
         with:
           node-version: 24
           cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify RAG source and retrieval invariants
+        run: python -m unittest discover -s rag/tests -v
+      - name: Check chat JavaScript
+        run: node --check rag/web/app.js
       - run: npm ci
       - run: npx quartz build
       - uses: actions/upload-pages-artifact@v3
